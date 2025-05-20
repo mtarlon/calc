@@ -26,3 +26,28 @@ body {
     border: none;
     border-radius: 8px;
   }
+
+  .botones {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background: #5f6368;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #787c80;
+  }
+  
+  button.cero {
+    grid-column: span 2;
+  }
